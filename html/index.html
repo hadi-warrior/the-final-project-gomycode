@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="https://img.freepik.com/photos-premium/logo-voiture_1066306-22257.jpg?w=826" />
+    <title>learn the future</title>
+  </head>
+  <body>
+    <nav> <!--la navbar-->
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+              Sadji <span>Elhadi</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="../html/portfolio.html">portfolio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="../html/contact.html">contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="../html/on hold.html">on hold</a></div>
+        </div>
+        <!--le changement de couleur acompagner du js-->
+        <div class="main__container">
+          <div class="box">
+              <span class="nameSwitchToggle">
+                  <input type="checkbox" id="switch" name="theme"/>
+                  <label for="switch">Toggle</label>
+              </span>
+          </div>
+      </div>    
+    </nav>
+    <!--le corp de la page (main)-->
+    <div id="hero">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="info">
+          <h1>the future</h1>
+          <p>
+            les voitures futuristes représentent l'évolution de la mobilité et de la technologie,un domaine en constante transformation qui vise à répondre aux défis environnementaux, économiques et technologiques du XXIe siècle. Ces véhicules, qui pourraient dominer les routes de demain, sont conçus pour offrir une expérience de conduite plus sûre, plus efficace et plus respectueuse de l'environnement. Voici une exploration détaillée de ce que pourraient être les voitures futuristes <br>
+            <u><span class="one">1. Les voitures électriques et hybrides : </span></u>
+            Au cœur de cette révolution se trouvent les voitures électriques. Elles éliminent les émissions de gaz à effet de serre liées aux moteurs à combustion interne, contribuant ainsi à un avenir plus vert. Les voitures futuristes seront probablement alimentées par des batteries de plus en plus efficaces, capables de fournir des autonomies plus longues et des temps de recharge réduits. En outre, des technologies telles que la recharge sans fil et les batteries solid-state pourraient rendre la recharge encore plus pratique et rapide. <br>
+            <u><span class="two">2. L’autonomie et la conduite sans conducteur :</span></u>
+            L'une des innovations les plus excitantes des voitures futuristes est l'autonomie totale. Ces véhicules seront capables de se conduire eux-mêmes, grâce à des technologies avancées telles que l'intelligence artificielle, la reconnaissance d'images, et les capteurs radar et lidar. Le véhicule pourra analyser son environnement en temps réel, prendre des décisions basées sur des algorithmes complexes, et interagir de manière proactive avec d'autres véhicules et infrastructures.
+            La conduite autonome promet de révolutionner la sécurité routière, en éliminant les erreurs humaines responsables de nombreux accidents. Les véhicules autonomes pourraient également rendre la conduite plus agréable, car les passagers pourraient se concentrer sur d'autres activités pendant le trajet. <br>
+          </p>
+        </div>
+      </div>
+       <!--le slider avec les images utiliser-->
+      <div class="slider">
+        <img src="../images/left-arrow.png" id="prev" />
+        <div class="preview">
+          <img src="../images/second.jpeg" class="active thumb" />
+          <img src="../images/five.jpg" class="thumb" />
+          <img src="../images/first.jpeg" class="thumb" />
+          <img src="../images/fourth.jpeg" class="thumb" />
+          <img src="../images/third.jpeg" class="thumb" />
+        </div>
+        <img src="../images/right-arrow.png" id="next" />
+      </div>
+    </div>
+
+  </body>
+  <!--le js-->
+  <script src="../scripts/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+</html>

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+/*for the navbar*/
+nav{
+    z-index: 2;
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo span{
+    color: white;
+    text-shadow: 0 0 10px #077b32;
+}
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+.nav-container .links{
+    display: flex;
+}
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #077b32;
+    transition: 0.2s linear;
+}
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+.nav-container .links a:hover{
+    color: #077b32;
+}
+/*for the body of the page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#hero {
+ 
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/second.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.container {
+  padding-left: 15%;
+  width: 50%;
+  height: 100vh;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info {
+  
+  width: 650px;
+  height: 500px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  transform: translateY(50%);
+  margin-right: 30px;
+}
+.info h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+  color: orange;
+}
+
+.info p {
+  
+  color: #f0eef1;
+  font-size: 17px;
+  margin: 20px 0;
+  line-height: 18px;
+}
+::placeholder {
+  color: #ccc;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+
+#prev,
+#next {
+  width: 20px;
+  cursor: pointer;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  margin: 0 60px;
+}
+
+.preview img {
+  width: 60px;
+  margin: 0 10px;
+  opacity: 0.4;
+}
+
+.preview .active {
+  display: block;
+  border: 3px solid #fff;
+  width: 100px;
+  opacity: 1;
+}
+span.one{
+  color:orange ;
+}
+u{
+  color: orange;
+}
+/*DARK MODE STYLE*/
+
+html[data-theme='dark']{
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-headings: #3694FF;
+  --color-text: #B5B5B5;
+}
+html{
+  --bg: orange;
+  --bg-panel: #EBEBEB;
+  --color-headings: #0077FF;
+  --color-text: #333333;
+}
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+transition: all 750ms !important;
+transition-delay: 0 !important;
+}
+
+/*DARK MODE STYLE */
+
+body{
+  background-color: var(--bg);
+}
+
+
+.nameSwitchToggle{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.nameSwitchToggle > p{
+  margin-top: 0;
+  font-family: system-ui;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #0077FF;
+}
+
+
+/*SWITCH TOGGLE STYLE*/
+
+input[type=checkbox]{
+height: 0;
+width: 0;
+visibility: hidden;
+}
+
+label {
+cursor: pointer;
+text-indent: -9999px;
+width: 60px;
+height: 30px;
+background: grey;
+display: block;
+border-radius: 100px;
+position: relative;
+}
+
+label:after {
+content: '';
+position: absolute;
+top: 5px;
+left: 5px;
+width: 20px;
+height: 20px;
+background: #fff;
+border-radius: 90px;
+transition: 0.3s;
+}
+
+input:checked + label {
+background:  #0077FF;
+}
+
+input:checked + label:after {
+left: calc(100% - 5px);
+transform: translateX(-100%);
+}
+
+label:active:after {
+width: 130px;
+}
+@media screen  and (max-width:1400px) {
+  .container {
+    width: 90%;
+  }
+}
